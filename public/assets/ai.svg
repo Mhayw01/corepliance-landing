@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- A -->
+  <path d="M22 52V26c0-7.7 6.3-14 12-14s12 6.3 12 14v26" stroke="#3073AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M22 36h24" stroke="#3073AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- I -->
+  <path d="M52 18v34" stroke="#3073AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
