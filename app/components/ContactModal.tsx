@@ -35,6 +35,21 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    if (!isSuccess) {
+      return;
+    }
+
+    const timeout = window.setTimeout(() => {
+      setIsSuccess(false);
+      onClose();
+    }, 1500);
+
+    return () => {
+      window.clearTimeout(timeout);
+    };
+  }, [isSuccess, onClose]);
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
@@ -88,13 +103,19 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
         </button>
 
         {isSuccess ? (
-          <div className="space-y-6 text-center">
+          <div className="space-y-3 text-center">
             <div className="text-xl font-medium text-slate-800">
               Thanks - we'll be in touch.
             </div>
+            <div className="text-sm text-slate-600">
+              Your message has been sent successfully.
+            </div>
             <button
               type="button"
-              onClick={onClose}
+              onClick={() => {
+                setIsSuccess(false);
+                onClose();
+              }}
               className="w-full rounded-[20px] bg-[#3073AF] px-6 py-3 text-lg font-medium text-white"
             >
               Close

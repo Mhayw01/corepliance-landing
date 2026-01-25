@@ -176,18 +176,7 @@ export default function Section3() {
           </Reveal>
 
           <Reveal delay={0.75}>
-            <div
-              className="mt-12 flex justify-center"
-              role="button"
-              tabIndex={0}
-              onClick={() => window.dispatchEvent(new Event("open-contact"))}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.key === " ") {
-                  event.preventDefault();
-                  window.dispatchEvent(new Event("open-contact"));
-                }
-              }}
-            >
+            <div className="mt-12 flex justify-center">
               <button
                 type="button"
                 onClick={() => window.dispatchEvent(new Event("open-contact"))}
