@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
+import { cubicBezier, motion, useReducedMotion } from "framer-motion";
 
 export default function HeroBanner() {
   const shouldReduceMotion = useReducedMotion();
   const resolvedY = shouldReduceMotion ? 0 : 16;
-  const baseTransition = shouldReduceMotion
-    ? { duration: 0 }
-    : { duration: 1.4, ease: "easeOut" };
+  const baseTransition = {
+    duration: shouldReduceMotion ? 0 : 1.4,
+    ease: shouldReduceMotion ? cubicBezier(0, 0, 0, 0) : cubicBezier(0.16, 1, 0.3, 1),
+  };
 
   return (
     <section className="relative h-[82vh] w-full overflow-hidden">

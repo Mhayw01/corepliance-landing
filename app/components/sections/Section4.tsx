@@ -144,9 +144,9 @@ export default function Section4() {
   };
 
   return (
-    <section className="h-[1366px] w-full bg-white">
-      <div className="relative mx-auto h-full w-[1440px]">
-        <div className="flex h-full flex-col items-center pt-[96px]">
+    <section className="w-full bg-white">
+      <div className="relative mx-auto w-[1440px]">
+        <div className="flex flex-col items-center pb-[96px] pt-[96px]">
           <Reveal delay={0}>
             <h2 className="text-center text-4xl font-semibold text-[#3073AF]">
               Why are law firms interested?
