@@ -13,7 +13,7 @@ export default function HeroBanner() {
 
   return (
     <section className="relative h-[82vh] w-full overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/assets/banner-image.svg"
           alt=""
@@ -23,7 +23,7 @@ export default function HeroBanner() {
           className="object-cover"
         />
       </div>
-      <div className="absolute inset-0 z-10">
+      <div className="absolute inset-0 z-10 pointer-events-none">
         <Image
           src="/assets/banner-filter.svg"
           alt=""
@@ -85,14 +85,16 @@ export default function HeroBanner() {
               </motion.p>
             </div>
             <div className="flex self-end">
-              <motion.div
-                className="flex h-[80px] w-[490px] items-center justify-center rounded-[20px] bg-[#5F66CA] text-3xl font-medium text-white"
+              <motion.button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event("open-contact"))}
+                className="relative z-30 flex h-[80px] w-[490px] cursor-pointer items-center justify-center rounded-[20px] bg-[#5F66CA] text-3xl font-medium text-white"
                 initial={{ opacity: 0, y: resolvedY }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...baseTransition, delay: 2.0 }}
               >
                 Contact us to find out more
-              </motion.div>
+              </motion.button>
             </div>
           </div>
         </div>
