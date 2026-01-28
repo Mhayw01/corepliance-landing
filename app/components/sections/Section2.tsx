@@ -31,7 +31,7 @@ export default function Section2() {
                 <p>
                   Every conveyancing matter requires a fully reasoned Client &
                   Matter Risk Assessment and yet for many law firms Risk Assessments now absorb hours per
-                  file, delay progress, frustrate clients, and expose firms to
+                  file, delay progress, frustrate clients and expose firms to
                   regulatory risk.
                 </p>
                 <p>
