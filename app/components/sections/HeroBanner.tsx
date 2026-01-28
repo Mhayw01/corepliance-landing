@@ -35,7 +35,7 @@ export default function HeroBanner() {
       </div>
       <div className="relative z-20 h-full">
         <motion.div
-          className="absolute left-[72px] top-[48px] h-[200px] w-[200px] overflow-hidden rounded-[50px]"
+            className="absolute left-[72px] top-[48px] h-[190px] w-[190px] overflow-hidden rounded-[50px]"
           initial={{ opacity: 0, y: resolvedY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...baseTransition, delay: 0 }}
@@ -43,8 +43,8 @@ export default function HeroBanner() {
           <Image
             src="/assets/logo.svg"
             alt="Corepliance logo"
-            width={190}
-            height={190}
+              width={180}
+              height={180}
             priority
           />
         </motion.div>
