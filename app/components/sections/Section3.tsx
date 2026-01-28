@@ -5,18 +5,29 @@ import Reveal from "../motion/Reveal";
 
 export default function Section3() {
   return (
-    <section className="w-full h-[1151px] bg-white">
-      <div className="relative h-full w-[1440px] mx-auto">
-        <Reveal delay={0}>
-          <div className="absolute left-[495px] top-[95px] text-4xl font-semibold text-[#3073AF]">
+    <section className="w-full h-[1151px] bg-white overflow-hidden flex justify-center">
+      <div className="relative h-full w-[1440px]">
+        <div className="hidden xl:block">
+          <Reveal delay={0}>
+            <div className="absolute left-[495px] top-[95px] text-4xl font-semibold text-[#3073AF]">
+              What Corepliance does
+            </div>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="absolute left-[502px] top-[216px] text-2xl font-normal text-stone-500">
+              At beta stage, Corepliance supports:
+            </div>
+          </Reveal>
+        </div>
+
+        <div className="block xl:hidden text-center px-6 pt-20">
+          <h2 className="text-[#3073AF] text-4xl font-semibold">
             What Corepliance does
-          </div>
-        </Reveal>
-        <Reveal delay={0.2}>
-          <div className="absolute left-[502px] top-[216px] text-2xl font-normal text-stone-500">
+          </h2>
+          <p className="mt-8 text-stone-500 text-2xl font-normal">
             At beta stage, Corepliance supports:
-          </div>
-        </Reveal>
+          </p>
+        </div>
 
         <div className="absolute left-1/2 top-[293px] w-full max-w-[720px] -translate-x-1/2">
           <Reveal delay={0.35}>

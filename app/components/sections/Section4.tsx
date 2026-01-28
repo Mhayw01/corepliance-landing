@@ -89,9 +89,9 @@ export default function Section4() {
     const isOpen = openCardId === card.id;
 
     return (
-      <div key={card.id} className="w-[523px]">
+      <div key={card.id} className="w-full max-w-[523px]">
         <div
-          className={`relative flex h-44 w-full items-center justify-between bg-[#3073AF] px-6 ${isOpen ? "rounded-t-[20px]" : "rounded-[20px]"}`}
+          className={`relative w-full bg-[#3073AF] px-[clamp(22px,2.4vw,37px)] py-[clamp(18px,2.2vw,28px)] text-white ${isOpen ? "rounded-t-[20px]" : "rounded-[20px]"}`}
           role="button"
           tabIndex={0}
           onClick={() => handleToggle(card.id)}
@@ -102,16 +102,28 @@ export default function Section4() {
             }
           }}
         >
-          <div className="max-w-[300px] text-left">
-            <div className="text-2xl font-medium text-white">{card.title}</div>
-            <div className="mt-2 text-base font-normal text-white">
-              {card.sublines.join(" ")}
+          <div className="flex items-start justify-between gap-6">
+            <div className="text-left">
+              <div className="font-medium leading-tight text-[clamp(18px,1.8vw,24px)]">
+                {card.title}
+              </div>
+              <div className="mt-3 font-normal leading-snug text-[clamp(13px,1.3vw,16px)]">
+                <span className={card.id === 1 ? "whitespace-nowrap" : undefined}>
+                  {card.sublines.join(" ")}
+                </span>
+              </div>
+            </div>
+            <div className="shrink-0 flex h-[clamp(56px,6vw,96px)] w-[clamp(56px,6vw,96px)] items-center justify-center">
+              <Image
+                src={card.icon}
+                alt=""
+                width={96}
+                height={96}
+                className="h-full w-full object-contain"
+              />
             </div>
           </div>
-          <div className="flex h-24 w-24 items-center justify-center">
-            <Image src={card.icon} alt="" width={96} height={96} />
-          </div>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+          <div className="mt-6 flex w-full justify-center">
             <svg
               width="20"
               height="12"
@@ -131,8 +143,8 @@ export default function Section4() {
           </div>
         </div>
         {isOpen ? (
-          <div className="w-full rounded-b-[20px] border border-[#C6DAEE] bg-[#EAF2FA] p-6 text-base font-normal leading-6 text-[#111827]">
-            <div className="space-y-4">
+          <div className="w-full rounded-b-[20px] border border-[#C7D6F2] bg-[#EEF6FF] px-[clamp(22px,2.4vw,37px)] py-8 text-slate-900">
+            <div className="space-y-4 text-base font-normal leading-6">
               {card.description.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -144,25 +156,23 @@ export default function Section4() {
   };
 
   return (
-    <section className="w-full bg-white">
-      <div className="relative mx-auto w-[1440px]">
-        <div className="flex flex-col items-center pb-[96px] pt-[96px]">
-          <Reveal delay={0}>
-            <h2 className="text-center text-4xl font-semibold text-[#3073AF]">
-              Why are law firms interested?
-            </h2>
-          </Reveal>
+    <section className="bg-white py-20">
+      <div className="mx-auto w-full max-w-[1180px] px-6">
+        <Reveal delay={0}>
+          <h2 className="text-center text-4xl font-semibold text-[#3073AF]">
+            Why are law firms interested?
+          </h2>
+        </Reveal>
 
-          <Reveal delay={0.25}>
-            <div className="mt-[96px] grid grid-cols-2 gap-x-28 gap-y-[77px]">
-              {cards.slice(0, 6).map(renderCard)}
-            </div>
+        <Reveal delay={0.25}>
+          <div className="mt-14 grid grid-cols-2 justify-items-center gap-x-[clamp(20px,3vw,90px)] gap-y-[clamp(22px,3vw,56px)]">
+            {cards.slice(0, 6).map(renderCard)}
+          </div>
 
-            <div className="mt-[77px] flex justify-center">
-              {renderCard(cards[6])}
-            </div>
-          </Reveal>
-        </div>
+          <div className="mt-[clamp(22px,3vw,56px)] flex justify-center">
+            {renderCard(cards[6])}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
