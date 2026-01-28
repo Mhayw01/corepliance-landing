@@ -18,10 +18,13 @@ export default function HomePage() {
 
   useEffect(() => {
     const handleOpen = () => openContact();
+    const win = window as Window & { openContactModal?: () => void };
+    win.openContactModal = openContact;
     window.addEventListener("open-contact", handleOpen);
 
     return () => {
       window.removeEventListener("open-contact", handleOpen);
+      delete win.openContactModal;
     };
   }, []);
 

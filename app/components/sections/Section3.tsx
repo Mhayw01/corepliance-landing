@@ -33,7 +33,7 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  Evidence-led compliance
+                  Evidence-led Compliance
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
                   Evidence-based CMRA drafting aligned to UK regulatory
@@ -54,7 +54,7 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  Identity &amp; verification
+                  Identity &amp; Verification
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
                   Electronic ID checking and secure ID &amp; Source of Funds
@@ -75,7 +75,7 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  Matter coverage
+                  Matter Coverage
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
                   Purchase, sale, sale &amp; purchase, and remortgage matters
@@ -96,7 +96,7 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  AI assistance
+                  AI Assistance
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
                   AI-assisted extraction of key financial data to support faster
@@ -117,10 +117,10 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  Lawyer control
+                  Lawyer Control
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
-                  Full lawyer review, control, and approval before any decision
+                  Full lawyer review, control and approval before any decision
                   is finalised
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  Audit &amp; oversight
+                  Audit &amp; Oversight
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
                   Clear audit trails for internal review and regulatory scrutiny
@@ -158,7 +158,7 @@ export default function Section3() {
               </div>
               <div>
                 <div className="text-xl font-semibold leading-6 text-[#3073AF]">
-                  Data security
+                  Data Security
                 </div>
                 <div className="text-base font-medium leading-6 text-stone-500">
                   UK-hosted, encrypted data, automatically deleted after 60 days
@@ -168,18 +168,20 @@ export default function Section3() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.55}>
-            <div className="mt-16 text-center text-2xl font-normal text-stone-500">
-              All data is UK-hosted, encrypted, and automatically deleted after
-              60 days.
-            </div>
-          </Reveal>
-
           <Reveal delay={0.75}>
             <div className="mt-12 flex justify-center">
               <button
                 type="button"
-                onClick={() => window.dispatchEvent(new Event("open-contact"))}
+                onClick={() => {
+                  const win = window as Window & {
+                    openContactModal?: () => void;
+                  };
+                  if (win.openContactModal) {
+                    win.openContactModal();
+                  } else {
+                    window.dispatchEvent(new Event("open-contact"));
+                  }
+                }}
                 className="flex h-20 w-[498px] items-center justify-center rounded-[20px] bg-[#3073AF] text-3xl font-medium text-white"
               >
                 Contact us to find out more

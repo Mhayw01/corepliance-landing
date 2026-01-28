@@ -22,7 +22,7 @@ const cards = [
     icon: "/assets/reduce-delays.svg",
     description: [
       "Under SRA guidance, no substantive legal work can commence until the CMRA has been completed and signed off, meaning AML delays directly stall transactions.",
-      "Corepliance dramatically shortens the time required to complete and approve CMRAs, enabling lawyers to begin legal work far earlier in the lifecycle of a matter and reducing one of the key contributors to conveyancing timelines.",
+      "Corepliance dramatically shortens the time taken to complete and approve CMRAs, enabling lawyers to begin legal work far earlier in the lifecycle of a matter and reducing one of the key contributors to increased conveyancing timelines.",
     ],
   },
   {
@@ -59,7 +59,7 @@ const cards = [
   {
     id: 6,
     title: "Remove Stress",
-    sublines: ["from one of the most cited", "sources of stress for lawyers"],
+    sublines: ["from one of the most cited", "sources of tension for lawyers"],
     icon: "/assets/stress.svg",
     description: [
       "AML compliance is widely regarded by conveyancers as one of the most stressful and least rewarding aspects of their role, contributing to burnout and attrition within the profession.",
@@ -72,7 +72,7 @@ const cards = [
     sublines: ["through existing AML or", "ID administration charges"],
     icon: "/assets/costs.svg",
     description: [
-      "Many law firms already charge clients an AML or ID administration fee, typically ranging from £25 to £50 plus VAT.",
+      "Many law firms already charge clients an AML or ID administration fee, typically ranging from £25 to £50 plus VAT per client.",
       "Corepliance's per-use pricing is designed to sit comfortably within this existing charging structure, meaning firms can adopt the platform without reducing profitability, as the cost can be fully recovered through standard client disbursements.",
     ],
   },
@@ -105,9 +105,7 @@ export default function Section4() {
           <div className="max-w-[300px] text-left">
             <div className="text-2xl font-medium text-white">{card.title}</div>
             <div className="mt-2 text-base font-normal text-white">
-              {card.sublines.map((line) => (
-                <div key={line}>{line}</div>
-              ))}
+              {card.sublines.join(" ")}
             </div>
           </div>
           <div className="flex h-24 w-24 items-center justify-center">
