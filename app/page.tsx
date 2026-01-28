@@ -37,28 +37,28 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-white">
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <HeroBannerMobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <HeroBanner />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Section2Mobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Section2 />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Section3Mobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Section3 />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Section4Mobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Section4 />
       </div>
       <div className="lg:hidden">
@@ -67,16 +67,16 @@ export default function HomePage() {
       <div className="hidden lg:block">
         <Section5 />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Section6Mobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Section6 />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <FooterMobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Footer />
       </div>
       <ContactModal isOpen={isContactOpen} onClose={closeContact} />
