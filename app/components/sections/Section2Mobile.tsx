@@ -31,10 +31,7 @@ export default function Section2Mobile() {
             <p>AML compliance shouldn’t consume your fee-earning time.</p>
             <p>
               Every conveyancing matter requires a fully reasoned Client &amp;
-              Matter Risk Assessment.
-            </p>
-            <p>
-              Yet for many law firms Risk Assessments now absorb hours per file,
+              Matter Risk Assessment and yet for many law firms Risk Assessments now absorb hours per file,
               delay progress, frustrate clients, and expose firms to regulatory
               risk.
             </p>
@@ -45,7 +42,7 @@ export default function Section2Mobile() {
             <p>
               We help conveyancing lawyers complete consistent, regulator-ready
               Client &amp; Matter Risk Assessments in minutes rather than
-              hours—without removing professional judgment or control.
+              hours, without removing professional judgment or control.
             </p>
           </div>
         </Reveal>

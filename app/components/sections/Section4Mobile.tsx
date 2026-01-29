@@ -22,7 +22,7 @@ const cards = [
     icon: "/assets/reduce-delays.svg",
     description: [
       "Under SRA guidance, no substantive legal work can commence until the CMRA has been completed and signed off, meaning AML delays directly stall transactions.",
-      "Corepliance dramatically shortens the time taken to complete and approve CMRAs, enabling lawyers to begin legal work far earlier in the lifecycle of a matter and reducing one of the key contributors to increased conveyancing timelines.",
+      "Corepliance dramatically shortens the time required to complete and approve CMRAs, enabling lawyers to begin legal work far earlier in the lifecycle of a matter and reducing one of the key contributors to increased conveyancing timelines.",
     ],
   },
   {
@@ -59,7 +59,7 @@ const cards = [
   {
     id: "stress",
     title: "Remove Stress",
-    subline: "from one of the most cited sources of stress for lawyers",
+    subline: "from one of the most cited sources of tension for lawyers",
     icon: "/assets/stress.svg",
     description: [
       "AML compliance is widely regarded by conveyancers as one of the most stressful and least rewarding aspects of their role, contributing to burnout and attrition within the profession.",

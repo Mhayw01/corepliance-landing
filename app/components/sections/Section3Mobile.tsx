@@ -6,42 +6,42 @@ import Reveal from "../motion/Reveal";
 const features = [
   {
     id: "evidence",
-    title: "Evidence-led compliance",
+    title: "Evidence-led Compliance",
     description:
       "Evidence-based CMRA drafting aligned to UK regulatory expectations",
     icon: "/assets/evidence-led.svg",
   },
   {
     id: "identity",
-    title: "Identity & verification",
+    title: "Identity & Verification",
     description:
       "Electronic ID checking and secure ID & Source of Funds validation, including gifted deposits",
     icon: "/assets/identity.svg",
   },
   {
     id: "matter",
-    title: "Matter coverage",
+    title: "Matter Coverage",
     description:
       "Purchase, sale, sale & purchase, and remortgage matters supported",
     icon: "/assets/matter.svg",
   },
   {
     id: "ai",
-    title: "AI assistance",
+    title: "AI Assistance",
     description:
       "AI-assisted extraction of key financial data to support faster review",
     icon: "/assets/ai.svg",
   },
   {
     id: "lawyer",
-    title: "Lawyer control",
+    title: "Lawyer Control",
     description:
-      "Full lawyer review, control, and approval before any decision is finalised",
+      "Full lawyer review, control and approval before any decision is finalised",
     icon: "/assets/lawyer.svg",
   },
   {
     id: "audit",
-    title: "Audit & oversight",
+    title: "Audit & Oversight",
     description:
       "Clear audit trails for internal review and regulatory scrutiny",
     icon: "/assets/audit.svg",
