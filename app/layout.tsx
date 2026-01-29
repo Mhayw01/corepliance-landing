@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Corepliance",
     images: [
       {
-        url: "/assets/meta.svg",
+        url: "/assets/meta.png",
         width: 1200,
         height: 630,
         alt: "Corepliance — The AML compliance platform for conveyancing lawyers",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Corepliance",
     description: "The AML compliance platform for conveyancing lawyers.",
-    images: ["/assets/meta.svg"],
+    images: ["/assets/meta.png"],
   },
 };
 
@@ -48,7 +48,7 @@ export default function RootLayout({
           property="og:description"
           content="The AML compliance platform for conveyancing lawyers."
         />
-        <meta property="og:image" content="https://corepliance.co.uk/assets/meta.svg" />
+        <meta property="og:image" content="https://corepliance.co.uk/assets/meta.png" />
         <meta property="og:url" content="https://corepliance.co.uk" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Corepliance" />
@@ -56,7 +56,7 @@ export default function RootLayout({
           name="twitter:description"
           content="The AML compliance platform for conveyancing lawyers."
         />
-        <meta name="twitter:image" content="https://corepliance.co.uk/assets/meta.svg" />
+        <meta name="twitter:image" content="https://corepliance.co.uk/assets/meta.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
