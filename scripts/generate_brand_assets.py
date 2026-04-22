@@ -43,6 +43,14 @@ def save_favicons() -> None:
         img.save(out, optimize=True)
         print(f"  wrote {out.relative_to(ROOT)} ({size}x{size})")
 
+    # Multi-size ICO for app/favicon.ico (the Next.js App Router convention file,
+    # which takes precedence over <head> metadata favicons in Safari and legacy IE).
+    ico_sizes = [(16, 16), (32, 32), (48, 48), (64, 64)]
+    ico_source = composite_icon(ICON_DARK, 64, WHITE, icon_scale=1.0)
+    ico_out = ROOT / "app/favicon.ico"
+    ico_source.save(ico_out, format="ICO", sizes=ico_sizes)
+    print(f"  wrote {ico_out.relative_to(ROOT)} (ICO, {', '.join(f'{w}x{h}' for w, h in ico_sizes)})")
+
     # Apple touch icon: cyan hex on navy, slight padding — iOS renders with rounded corners.
     apple = composite_icon(ICON_CYAN, 180, NAVY, icon_scale=0.68)
     apple_out = ROOT / "public/apple-touch-icon.png"
