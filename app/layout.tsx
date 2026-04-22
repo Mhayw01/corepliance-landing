@@ -21,13 +21,17 @@ const lato = Lato({
   display: "swap",
 });
 
+const SITE_TITLE = "Corepliance | Regulator-ready AML compliance for conveyancing lawyers";
+const SITE_DESCRIPTION =
+  "Regulator-ready AML compliance for conveyancing firms. Complete clear, compliant client and matter risk assessments in minutes instead of hours.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://corepliance.co.uk"),
-  title: "Corepliance",
-  description: "The AML compliance platform for conveyancing lawyers.",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   openGraph: {
-    title: "Corepliance",
-    description: "The AML compliance platform for conveyancing lawyers.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     url: "https://corepliance.co.uk",
     siteName: "Corepliance",
     images: [
@@ -35,15 +39,15 @@ export const metadata: Metadata = {
         url: "/assets/meta.png",
         width: 1200,
         height: 630,
-        alt: "Corepliance — The AML compliance platform for conveyancing lawyers",
+        alt: "Corepliance — Regulator-ready AML compliance for conveyancing lawyers",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Corepliance",
-    description: "The AML compliance platform for conveyancing lawyers.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: ["/assets/meta.png"],
   },
   icons: {
@@ -65,20 +69,6 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
       <head>
         <link rel="canonical" href="https://corepliance.co.uk" />
-        <meta property="og:title" content="Corepliance" />
-        <meta
-          property="og:description"
-          content="The AML compliance platform for conveyancing lawyers."
-        />
-        <meta property="og:image" content="https://corepliance.co.uk/assets/meta.png" />
-        <meta property="og:url" content="https://corepliance.co.uk" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Corepliance" />
-        <meta
-          name="twitter:description"
-          content="The AML compliance platform for conveyancing lawyers."
-        />
-        <meta name="twitter:image" content="https://corepliance.co.uk/assets/meta.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
