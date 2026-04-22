@@ -53,8 +53,7 @@ export default function FooterV2() {
       </p>
 
       <h3 className="text-base font-semibold text-slate-900">Contact us</h3>
-      <p>Email: Corepliance@Outlook.com</p>
-      <p>Address: 5 Church Street, Ystrad Mynach CF82 7EE</p>
+      <p>Email: info@corepliance.co.uk</p>
     </div>
   );
 
@@ -96,7 +95,7 @@ export default function FooterV2() {
 
       <h3 className="text-base font-semibold text-slate-900">Contact us</h3>
       <p>If you have any questions about our use of cookies, please contact us at:</p>
-      <p>Email: Corepliance@Outlook.com</p>
+      <p>Email: info@corepliance.co.uk</p>
     </div>
   );
 
@@ -134,11 +133,10 @@ export default function FooterV2() {
             </h4>
             <ul className="mt-4 space-y-2 font-[family-name:var(--font-lato)] text-sm font-light text-white/80">
               <li>
-                <a href="mailto:Corepliance@Outlook.com" className="transition-colors hover:text-[var(--brand-vivid)]">
-                  Corepliance@Outlook.com
+                <a href="mailto:info@corepliance.co.uk" className="transition-colors hover:text-[var(--brand-vivid)]">
+                  info@corepliance.co.uk
                 </a>
               </li>
-              <li>5 Church Street, Ystrad Mynach CF82 7EE</li>
             </ul>
           </div>
 
