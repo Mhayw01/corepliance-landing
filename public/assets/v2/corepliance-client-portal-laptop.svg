@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1800 1100" width="1800" height="1100"
+     font-family="'Lato', 'Poppins', 'Helvetica Neue', Arial, sans-serif">
+
+  <defs>
+    <linearGradient id="bezelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2d35"/>
+      <stop offset="50%" stop-color="#1a1c22"/>
+      <stop offset="100%" stop-color="#25282f"/>
+    </linearGradient>
+
+    <linearGradient id="lidEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c5cbd2"/>
+      <stop offset="50%" stop-color="#8a9099"/>
+      <stop offset="100%" stop-color="#b8bfc6"/>
+    </linearGradient>
+
+    <linearGradient id="baseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8dde3"/>
+      <stop offset="40%" stop-color="#b3b8be"/>
+      <stop offset="100%" stop-color="#8c9199"/>
+    </linearGradient>
+
+    <linearGradient id="lipGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9ea3ab"/>
+      <stop offset="50%" stop-color="#c9cdd3"/>
+      <stop offset="100%" stop-color="#7d828a"/>
+    </linearGradient>
+
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#000" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="bgPattern" x="0" y="0" width="130" height="130" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#21e9f5" stroke-width="3" opacity="0.045">
+        <path d="M65 12 L108 34 L108 76 L65 98 L22 76 L22 34 Z"/>
+        <path d="M44 50 L60 66 L78 48"/>
+      </g>
+    </pattern>
+
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24">
+      <path d="M6 3h9l5 5v13H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9 13h6M9 17h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-id" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="9" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14 10h5M14 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tx" viewBox="0 0 24 24">
+      <rect x="3" y="6" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3 10h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-upload" viewBox="0 0 24 24">
+      <path d="M12 16V4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5 16v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <polyline points="4 12 10 18 20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 8v4M12 16h0.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24">
+      <path d="M12 16V4M7 9l5-5 5 5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <clipPath id="screenClip">
+      <rect x="178" y="72" width="1444" height="834" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <ellipse cx="900" cy="1025" rx="820" ry="22" fill="url(#shadowGrad)"/>
+
+  <rect x="142" y="36" width="1516" height="906" rx="18" fill="url(#lidEdge)"/>
+  <rect x="150" y="44" width="1500" height="890" rx="12" fill="url(#bezelGrad)"/>
+  <rect x="178" y="72" width="1444" height="834" rx="4" fill="#15182e"/>
+
+  <circle cx="900" cy="58" r="3.5" fill="#0a0b10"/>
+  <circle cx="900" cy="58" r="1.5" fill="#1a1d24"/>
+
+  <rect x="130" y="942" width="1540" height="6" fill="#2e3138"/>
+
+  <path d="M 100 948 L 1700 948 L 1735 988 L 65 988 Z" fill="url(#baseGrad)"/>
+
+  <path d="M 65 988 L 1735 988 L 1720 1002 L 80 1002 Z" fill="url(#lipGrad)"/>
+
+  <path d="M 850 988 L 950 988 L 940 998 L 860 998 Z" fill="#6b7079" opacity="0.7"/>
+
+  <rect x="105" y="948" width="1590" height="1" fill="#ffffff" opacity="0.25"/>
+
+  <g clip-path="url(#screenClip)">
+    <rect x="178" y="72" width="1444" height="834" fill="#15182e"/>
+    <rect x="178" y="72" width="1444" height="834" fill="url(#bgPattern)"/>
+
+    <g transform="translate(178, 72)">
+
+      <g transform="translate(56, 34)">
+        <g>
+          <path d="M20 2 L37 12 L37 28 L20 38 L3 28 L3 12 Z"
+                fill="none" stroke="#21e9f5" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M12 18 L19 25 L29 15"
+                fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <text x="54" y="28" fill="#ffffff" font-size="20" font-weight="500" letter-spacing="2.5">COREPLIANCE</text>
+
+        <text x="1080" y="24" fill="#21e9f5" font-size="13" font-weight="400" letter-spacing="0.4">Dashboard</text>
+        <text x="1164" y="24" fill="#a8b4c0" font-size="13" font-weight="300" letter-spacing="0.4">Matters</text>
+        <text x="1224" y="24" fill="#a8b4c0" font-size="13" font-weight="300" letter-spacing="0.4">Clients</text>
+        <text x="1280" y="24" fill="#a8b4c0" font-size="13" font-weight="300" letter-spacing="0.4">Reports</text>
+        <circle cx="1350" cy="18" r="18" fill="#21e9f5"/>
+        <text x="1350" y="23" text-anchor="middle" fill="#15182e" font-size="12" font-weight="600" letter-spacing="0.5">JD</text>
+      </g>
+
+      <g transform="translate(56, 100)">
+        <text x="0" y="52" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="46" font-weight="500" fill="#21e9f5" letter-spacing="-0.5">Client Portal</text>
+        <text x="0" y="80" fill="#c8d4e0" font-size="14" font-weight="300">Everything you need for this matter, all in one place.</text>
+        <text x="1332" y="58" text-anchor="end" fill="#a8b4c0" font-size="12" font-weight="300">Signed in as</text>
+        <text x="1332" y="78" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-style="italic" fill="#ffffff" font-size="14" font-weight="400">Jane Doe &#183; Miller &amp; Co. Solicitors</text>
+      </g>
+
+      <g transform="translate(56, 210)">
+        <rect width="1332" height="52" rx="10" fill="#ffffff" fill-opacity="0.03" stroke="#21e9f5" stroke-opacity="0.18"/>
+        <text x="22" y="32" font-size="13" font-weight="300">
+          <tspan fill="#c8d4e0">Matter </tspan><tspan fill="#21e9f5">#MT-2041 &#183; Thompson purchase</tspan><tspan fill="#c8d4e0"> &#183; 3 of 5 steps complete</tspan>
+        </text>
+        <rect x="438" y="23" width="800" height="6" rx="3" fill="#ffffff" fill-opacity="0.07"/>
+        <rect x="438" y="23" width="480" height="6" rx="3" fill="#21e9f5"/>
+        <text x="1310" y="34" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="18" font-weight="500" fill="#21e9f5">60%</text>
+      </g>
+
+      <g transform="translate(56, 284)">
+
+        <g transform="translate(0, 0)">
+          <rect width="253" height="270" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#e2eef5" stroke-opacity="0.09"/>
+          <rect x="22" y="22" width="50" height="50" rx="10" fill="#21e9f5" fill-opacity="0.1"/>
+          <g transform="translate(34, 34)" color="#21e9f5"><use xlink:href="#icon-user" width="26" height="26"/></g>
+          <text x="22" y="112" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">Personal</text>
+          <text x="22" y="132" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">details</text>
+          <text x="22" y="158" font-size="11.5" font-weight="300" fill="#8a97a8">Full name, DOB, address and</text>
+          <text x="22" y="174" font-size="11.5" font-weight="300" fill="#8a97a8">contact information.</text>
+          <text x="22" y="204" font-size="10.5" font-weight="300" fill="#9caab9" letter-spacing="0.3">6 of 6 fields</text>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.07"/>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#21e9f5"/>
+          <g transform="translate(22, 232)">
+            <rect width="82" height="22" rx="11" fill="#21e9f5" fill-opacity="0.12"/>
+            <circle cx="12" cy="11" r="3" fill="#21e9f5"/>
+            <text x="22" y="15" font-size="10.5" font-weight="400" fill="#21e9f5" letter-spacing="0.3">Complete</text>
+          </g>
+          <text x="231" y="38" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="22" fill="#5d6a7a">&#8250;</text>
+        </g>
+
+        <g transform="translate(269, 0)">
+          <rect width="253" height="270" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#e2eef5" stroke-opacity="0.09"/>
+          <rect x="22" y="22" width="50" height="50" rx="10" fill="#21e9f5" fill-opacity="0.1"/>
+          <g transform="translate(34, 34)" color="#21e9f5"><use xlink:href="#icon-doc" width="26" height="26"/></g>
+          <text x="22" y="112" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">Onboarding</text>
+          <text x="22" y="132" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">documents</text>
+          <text x="22" y="158" font-size="11.5" font-weight="300" fill="#8a97a8">Engagement letter, terms of</text>
+          <text x="22" y="174" font-size="11.5" font-weight="300" fill="#8a97a8">business and consents.</text>
+          <text x="22" y="204" font-size="10.5" font-weight="300" fill="#9caab9" letter-spacing="0.3">4 of 4 signed</text>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.07"/>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#21e9f5"/>
+          <g transform="translate(22, 232)">
+            <rect width="82" height="22" rx="11" fill="#21e9f5" fill-opacity="0.12"/>
+            <circle cx="12" cy="11" r="3" fill="#21e9f5"/>
+            <text x="22" y="15" font-size="10.5" font-weight="400" fill="#21e9f5" letter-spacing="0.3">Complete</text>
+          </g>
+          <text x="231" y="38" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="22" fill="#5d6a7a">&#8250;</text>
+        </g>
+
+        <g transform="translate(538, 0)">
+          <rect width="253" height="270" rx="12" fill="#21e9f5" fill-opacity="0.06" stroke="#21e9f5" stroke-opacity="0.5"/>
+          <rect x="22" y="22" width="50" height="50" rx="10" fill="#21e9f5" fill-opacity="0.2"/>
+          <g transform="translate(34, 34)" color="#21e9f5"><use xlink:href="#icon-id" width="26" height="26"/></g>
+          <text x="22" y="112" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">ID check</text>
+          <text x="22" y="158" font-size="11.5" font-weight="300" fill="#8a97a8">Electronic ID verification and</text>
+          <text x="22" y="174" font-size="11.5" font-weight="300" fill="#8a97a8">biometric match.</text>
+          <text x="22" y="204" font-size="10.5" font-weight="300" fill="#9caab9" letter-spacing="0.3">Submitted &#183; awaiting review</text>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.07"/>
+          <rect x="22" y="212" width="146" height="3" rx="1.5" fill="#f97225"/>
+          <g transform="translate(22, 232)">
+            <rect width="82" height="22" rx="11" fill="#f97225" fill-opacity="0.15"/>
+            <circle cx="12" cy="11" r="3" fill="#f97225"/>
+            <text x="22" y="15" font-size="10.5" font-weight="400" fill="#f97225" letter-spacing="0.3">In review</text>
+          </g>
+          <text x="231" y="38" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="22" fill="#21e9f5">&#8250;</text>
+        </g>
+
+        <g transform="translate(807, 0)">
+          <rect width="253" height="270" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#e2eef5" stroke-opacity="0.09"/>
+          <rect x="22" y="22" width="50" height="50" rx="10" fill="#21e9f5" fill-opacity="0.1"/>
+          <g transform="translate(34, 34)" color="#21e9f5"><use xlink:href="#icon-tx" width="26" height="26"/></g>
+          <text x="22" y="112" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">Transaction</text>
+          <text x="22" y="132" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">details</text>
+          <text x="22" y="158" font-size="11.5" font-weight="300" fill="#8a97a8">Source of funds, property and</text>
+          <text x="22" y="174" font-size="11.5" font-weight="300" fill="#8a97a8">purchase structure.</text>
+          <text x="22" y="204" font-size="10.5" font-weight="300" fill="#9caab9" letter-spacing="0.3">All fields confirmed</text>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.07"/>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#21e9f5"/>
+          <g transform="translate(22, 232)">
+            <rect width="82" height="22" rx="11" fill="#21e9f5" fill-opacity="0.12"/>
+            <circle cx="12" cy="11" r="3" fill="#21e9f5"/>
+            <text x="22" y="15" font-size="10.5" font-weight="400" fill="#21e9f5" letter-spacing="0.3">Complete</text>
+          </g>
+          <text x="231" y="38" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="22" fill="#5d6a7a">&#8250;</text>
+        </g>
+
+        <g transform="translate(1076, 0)">
+          <rect width="253" height="270" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#e2eef5" stroke-opacity="0.09"/>
+          <rect x="22" y="22" width="50" height="50" rx="10" fill="#21e9f5" fill-opacity="0.1"/>
+          <g transform="translate(34, 34)" color="#21e9f5"><use xlink:href="#icon-upload" width="26" height="26"/></g>
+          <text x="22" y="112" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">Upload</text>
+          <text x="22" y="132" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="17" font-weight="500" fill="#ffffff">documents</text>
+          <text x="22" y="158" font-size="11.5" font-weight="300" fill="#8a97a8">Bank statements, gift letters and</text>
+          <text x="22" y="174" font-size="11.5" font-weight="300" fill="#8a97a8">supporting evidence.</text>
+          <text x="22" y="204" font-size="10.5" font-weight="300" fill="#9caab9" letter-spacing="0.3">4 of 6 uploaded</text>
+          <rect x="22" y="212" width="209" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.07"/>
+          <rect x="22" y="212" width="138" height="3" rx="1.5" fill="#9caab9"/>
+          <g transform="translate(22, 232)">
+            <rect width="108" height="22" rx="11" fill="#e2eef5" fill-opacity="0.07"/>
+            <circle cx="12" cy="11" r="3" fill="#9caab9"/>
+            <text x="22" y="15" font-size="10.5" font-weight="400" fill="#b2bdca" letter-spacing="0.3">2 items needed</text>
+          </g>
+          <text x="231" y="38" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="22" fill="#5d6a7a">&#8250;</text>
+        </g>
+
+      </g>
+
+      <g transform="translate(56, 586)">
+
+        <g transform="translate(0, 0)">
+          <rect width="822" height="212" rx="12" fill="#ffffff" fill-opacity="0.025" stroke="#e2eef5" stroke-opacity="0.08"/>
+          <text x="22" y="36" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="15" font-weight="500" fill="#ffffff">Recent activity</text>
+          <text x="22" y="54" font-size="11" font-weight="300" fill="#8a97a8">Latest updates on this matter</text>
+
+          <g transform="translate(22, 72)">
+            <rect width="26" height="26" rx="6" fill="#21e9f5" fill-opacity="0.1"/>
+            <g transform="translate(6, 6)" color="#21e9f5"><use xlink:href="#icon-check" width="14" height="14"/></g>
+            <text x="40" y="18" font-size="12" font-weight="300">
+              <tspan fill="#ffffff" font-weight="400">Transaction details</tspan><tspan fill="#c8d4e0"> completed and signed off by Jane Doe</tspan>
+            </text>
+            <text x="778" y="18" text-anchor="end" font-size="10.5" font-weight="300" fill="#6b7684">12 min ago</text>
+          </g>
+          <line x1="22" y1="108" x2="800" y2="108" stroke="#e2eef5" stroke-opacity="0.06"/>
+
+          <g transform="translate(22, 116)">
+            <rect width="26" height="26" rx="6" fill="#f97225" fill-opacity="0.15"/>
+            <g transform="translate(6, 6)" color="#f97225"><use xlink:href="#icon-alert" width="14" height="14"/></g>
+            <text x="40" y="18" font-size="12" font-weight="300">
+              <tspan fill="#ffffff" font-weight="400">ID check</tspan><tspan fill="#c8d4e0"> submitted &#8212; awaiting automated review</tspan>
+            </text>
+            <text x="778" y="18" text-anchor="end" font-size="10.5" font-weight="300" fill="#6b7684">38 min ago</text>
+          </g>
+          <line x1="22" y1="152" x2="800" y2="152" stroke="#e2eef5" stroke-opacity="0.06"/>
+
+          <g transform="translate(22, 160)">
+            <rect width="26" height="26" rx="6" fill="#21e9f5" fill-opacity="0.1"/>
+            <g transform="translate(6, 6)" color="#21e9f5"><use xlink:href="#icon-up" width="14" height="14"/></g>
+            <text x="40" y="18" font-size="12" font-weight="300">
+              <tspan fill="#c8d4e0">Client uploaded </tspan><tspan fill="#ffffff" font-weight="400">bank statement &#8212; Jan 2026</tspan>
+            </text>
+            <text x="778" y="18" text-anchor="end" font-size="10.5" font-weight="300" fill="#6b7684">2 hours ago</text>
+          </g>
+        </g>
+
+        <g transform="translate(838, 0)">
+          <rect width="494" height="212" rx="12" fill="#ffffff" fill-opacity="0.025" stroke="#e2eef5" stroke-opacity="0.08"/>
+          <text x="22" y="36" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="15" font-weight="500" fill="#ffffff">Matter summary</text>
+          <text x="22" y="54" font-size="11" font-weight="300" fill="#8a97a8">Key details at a glance</text>
+
+          <g transform="translate(22, 72)">
+            <text x="0" y="18" font-size="11.5" font-weight="300" fill="#9caab9">Matter type</text>
+            <text x="450" y="18" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="12.5" fill="#ffffff">Residential purchase</text>
+          </g>
+          <g transform="translate(22, 104)">
+            <text x="0" y="18" font-size="11.5" font-weight="300" fill="#9caab9">Property</text>
+            <text x="450" y="18" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="12.5" fill="#ffffff">14 Oak Lane, Bristol</text>
+          </g>
+          <g transform="translate(22, 136)">
+            <text x="0" y="18" font-size="11.5" font-weight="300" fill="#9caab9">Value</text>
+            <text x="450" y="18" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="12.5" fill="#21e9f5">&#163;485,000</text>
+          </g>
+          <g transform="translate(22, 168)">
+            <text x="0" y="18" font-size="11.5" font-weight="300" fill="#9caab9">Target completion</text>
+            <text x="450" y="18" text-anchor="end" font-family="'Playfair Display', 'Lora', Georgia, serif" font-size="12.5" fill="#ffffff">28 May 2026</text>
+          </g>
+        </g>
+
+      </g>
+
+    </g>
+  </g>
+
+</svg>

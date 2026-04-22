@@ -3,20 +3,40 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Corepliance brand palette */
+  --brand-navy: #15182e;
+  --brand-vivid: #21e9f5;
+  --brand-mid-blue: #1e32d2;
+  --brand-orange: #f97225;
+  --brand-grey-blue: #e2eef5;
+  --brand-white: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy: var(--brand-navy);
+  --color-vivid: var(--brand-vivid);
+  --color-midblue: var(--brand-mid-blue);
+  --color-orange: var(--brand-orange);
+  --color-greyblue: var(--brand-grey-blue);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-lato);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {

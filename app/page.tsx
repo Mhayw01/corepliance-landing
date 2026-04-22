@@ -1,85 +1,45 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ContactModal from "./components/ContactModal";
-import HeroBanner from "./components/sections/HeroBanner";
-import HeroBannerMobile from "./components/sections/HeroBannerMobile";
-import Section2 from "./components/sections/Section2";
-import Section2Mobile from "./components/sections/Section2Mobile";
-import Section3 from "./components/sections/Section3";
-import Section3Mobile from "./components/sections/Section3Mobile";
-import Section4 from "./components/sections/Section4";
-import Section4Mobile from "./components/sections/Section4Mobile";
-import Section5 from "./components/sections/Section5";
-import Section5Mobile from "./components/sections/Section5Mobile";
-import Section6 from "./components/sections/Section6";
-import Section6Mobile from "./components/sections/Section6Mobile";
-import Footer from "./components/sections/Footer";
-import FooterMobile from "./components/sections/FooterMobile";
+import ContactModalV2 from "./preview/components/ContactModalV2";
+import Hero from "./preview/components/Hero";
+import ValueProp from "./preview/components/ValueProp";
+import Features from "./preview/components/Features";
+import BuiltByLawyers from "./preview/components/BuiltByLawyers";
+import HoursSaved from "./preview/components/HoursSaved";
+import Workflow from "./preview/components/Workflow";
+import ReduceBurden from "./preview/components/ReduceBurden";
+import CtaBand from "./preview/components/CtaBand";
+import FooterV2 from "./preview/components/FooterV2";
 
 export default function HomePage() {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
-  const openContact = () => setIsContactOpen(true);
-  const closeContact = () => setIsContactOpen(false);
-
   useEffect(() => {
-    const handleOpen = () => openContact();
+    const open = () => setIsContactOpen(true);
     const win = window as Window & { openContactModal?: () => void };
-    win.openContactModal = openContact;
-    window.addEventListener("open-contact", handleOpen);
-
+    win.openContactModal = open;
+    window.addEventListener("open-contact", open);
     return () => {
-      window.removeEventListener("open-contact", handleOpen);
+      window.removeEventListener("open-contact", open);
       delete win.openContactModal;
     };
   }, []);
 
   return (
-    <main className="min-h-screen bg-white">
-      <div className="lg:hidden">
-        <HeroBannerMobile />
-      </div>
-      <div className="hidden lg:block">
-        <HeroBanner />
-      </div>
-      <div className="lg:hidden">
-        <Section2Mobile />
-      </div>
-      <div className="hidden lg:block">
-        <Section2 />
-      </div>
-      <div className="lg:hidden">
-        <Section3Mobile />
-      </div>
-      <div className="hidden lg:block">
-        <Section3 />
-      </div>
-      <div className="lg:hidden">
-        <Section4Mobile />
-      </div>
-      <div className="hidden lg:block">
-        <Section4 />
-      </div>
-      <div className="lg:hidden">
-        <Section5Mobile />
-      </div>
-      <div className="hidden lg:block">
-        <Section5 />
-      </div>
-      <div className="lg:hidden">
-        <Section6Mobile />
-      </div>
-      <div className="hidden lg:block">
-        <Section6 />
-      </div>
-      <div className="lg:hidden">
-        <FooterMobile />
-      </div>
-      <div className="hidden lg:block">
-        <Footer />
-      </div>
-      <ContactModal isOpen={isContactOpen} onClose={closeContact} />
+    <main className="min-h-screen bg-white font-[family-name:var(--font-lato)] text-[var(--brand-navy)]">
+      <Hero />
+      <ValueProp />
+      <Features />
+      <BuiltByLawyers />
+      <HoursSaved />
+      <Workflow />
+      <ReduceBurden />
+      <CtaBand />
+      <FooterV2 />
+      <ContactModalV2 isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+
+      {/* Hidden form for Netlify build-time form detection. The live form renders inside ContactModalV2. */}
       <form
         name="contact"
         method="POST"
@@ -90,7 +50,7 @@ export default function HomePage() {
         <input type="hidden" name="form-name" value="contact" />
         <p className="hidden">
           <label>
-            Don't fill this out: <input name="bot-field" />
+            Don&rsquo;t fill this out: <input name="bot-field" />
           </label>
         </p>
         <input name="firstName" />
