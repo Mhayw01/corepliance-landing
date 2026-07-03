@@ -124,6 +124,30 @@ export default function FooterV2() {
             <p className="mt-5 max-w-sm font-[family-name:var(--font-lato)] text-sm font-light text-white/70">
               Regulator-ready AML compliance for conveyancing firms. Built by lawyers, for lawyers.
             </p>
+
+            {/* Move Wales Founding Member */}
+            <div className="mt-7 flex items-center gap-3">
+              <span className="font-[family-name:var(--font-lato)] text-[11px] font-medium uppercase leading-tight tracking-wider text-white/50">
+                Proudly
+                <br />
+                supporting
+              </span>
+              <a
+                href="https://move.wales"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Move Wales Founding Member — move.wales"
+                className="transition-opacity hover:opacity-80"
+              >
+                <Image
+                  src="/assets/move-wales-founding-member.png"
+                  alt="Move Wales Founding Member — move.wales"
+                  width={281}
+                  height={94}
+                  className="h-12 w-auto"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Contact */}
